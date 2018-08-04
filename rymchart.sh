@@ -1,5 +1,5 @@
 #//bin/sh
-# This script will return the all-time chart of rateyourmusic for a genre.
+# This script will open in the default web browser the all-time rateyourmusic chart for a genre.
 
 pgrep -x rofi && exit 1
 
