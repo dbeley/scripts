@@ -3,9 +3,11 @@
 
 pgrep -x rofi && exit 1
 
-artist="$(mpc list albumartist | rofi -i -dmenu)"
+artist="$(mpc list albumartist | rofi -p "Artiste " -no-custom -i -dmenu)"
+[ -z "$artist" ] && exit 1
 
-song="$(mpc search albumartist $artist | rofi -i -dmenu)"
+song="$(mpc search albumartist "$artist" | rofi -p "Titre " -no-custom -i -dmenu)"
+[ -z "$song" ] && exit 1
 
 mpc listall | grep "$song" | mpc add
 

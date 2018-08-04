@@ -1,23 +1,23 @@
-rym;Rateyourmusic;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
-gi;Google Images;https://www.google.fr/search?q=%s&tbm=isch
-g;Google;https://www.google.fr/search?q=%s
-lfm;Last.fm;https://www.last.fm/fr/search?q=%s
-scr;SensCritique;https://www.senscritique.com/recherche?query=%s
-map;Google Maps;https://www.google.fr/maps/?q=%s
-eba;Ebay;https://www.ebay.fr/sch/i.html?_nkw=%s
-twi;Twitter;https://twitter.com/search?q=%s
-yt;Youtube;https://www.youtube.com/results?search_query=%s
-rarbg;RARBG;https://rarbg.to/torrents.php?search=%s
-aur;AUR;https://aur.archlinux.org/packages/?K=%s
-arch;Arch Linux;https://www.archlinux.org/packages/?q=%s
-gplay;Google Play;https://play.google.com/store/search?q=%s
 ali;Aliexpress;https://fr.aliexpress.com/wholesale?SearchText=%s
-wiki;Wikipédia;https://fr.wikipedia.org/w/index.php?search=%s
-ldlc;LDLC;https://www.ldlc.com/navigation/%s/
 ama;Amazon;https://www.amazon.fr/s/field-keywords=%s
-wikien;Wikipédia English;https://en.wikipedia.org/w/index.php?search=%s
+arch;Arch Linux;https://www.archlinux.org/packages/?q=%s
+aur;AUR;https://aur.archlinux.org/packages/?K=%s
+eba;Ebay;https://www.ebay.fr/sch/i.html?_nkw=%s
+g;Google;https://www.google.fr/search?q=%s
+gi;Google Images;https://www.google.fr/search?q=%s&tbm=isch
 git;Github;https://github.com/search?q=%s&type=
-rut;Rutracker;https://rutracker.org/forum/tracker.php?nm=%s
+gplay;Google Play;https://play.google.com/store/search?q=%s
+ldlc;LDLC;https://www.ldlc.com/navigation/%s/
+lfm;Last.fm;https://www.last.fm/fr/search?q=%s
+map;Google Maps;https://www.google.fr/maps/?q=%s
 qw;Qwant;https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s
+rarbg;RARBG;https://rarbg.to/torrents.php?search=%s
+rut;Rutracker;https://rutracker.org/forum/tracker.php?nm=%s
+rym;Rateyourmusic;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
+scr;SensCritique;https://www.senscritique.com/recherche?query=%s
 srb;Seriebox;https://www.seriebox.com/search.php?txt=%s
 steam;Steam;https://store.steampowered.com/search/?term=%s
+twi;Twitter;https://twitter.com/search?q=%s
+wiki;Wikipédia;https://fr.wikipedia.org/w/index.php?search=%s
+wikien;Wikipédia English;https://en.wikipedia.org/w/index.php?search=%s
+yt;Youtube;https://www.youtube.com/results?search_query=%s
