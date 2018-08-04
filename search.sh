@@ -5,7 +5,7 @@
 
 pgrep -x rofi && exit 1
 
-query="$(cat ~/Scripts/searchengines.txt | awk -F ';' '{print $2,"- "$1}' | rofi -dmenu)"
+query="$(cat ~/Scripts/searchengines.txt | awk -F ';' '{print $2,"- "$1}' | rofi -i -dmenu)"
 
 engines="$(cat ~/Scripts/searchengines.txt | awk -F ';' '{print $1}')"
 
