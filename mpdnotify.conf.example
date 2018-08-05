@@ -1,0 +1,5 @@
+MUSIC_DIR="MUSIC_DIR"
+
+TEMP_COVER="/tmp/mpdnotify.png"
+
+COVER_SIZE="125x125"
