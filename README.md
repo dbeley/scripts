@@ -1,5 +1,6 @@
 # Scripts
 
+* **buku.sh** : search in buku bookmarks
 * **launch.sh** : launch a script among those in the folder
 * **mpdnotify.sh** : display a notification containing current mpd track information
 * **mpdsearch.sh** : add a song searched by its album artist and its name to
