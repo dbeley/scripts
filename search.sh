@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This script allows searching on the web with engines indicated in searchengines.txt
 # A search with a first word not corresponding to any search engines will do a search with the default engine (Qwant)
 # An empty search will do a search with the default engine (Qwant) of the selected line in rofi

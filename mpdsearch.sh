@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This script add a song searched by its album artist and its name to the current mpd playlist.
 
 pgrep -x rofi && exit 1

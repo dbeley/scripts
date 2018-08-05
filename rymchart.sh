@@ -1,4 +1,4 @@
-#//bin/sh
+#//bin/bash
 # This script will open in the default web browser the all-time rateyourmusic chart for a genre.
 
 pgrep -x rofi && exit 1
