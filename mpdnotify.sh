@@ -18,6 +18,8 @@ songinfo="$(mpc current -f "%artist% - %title%")"
 
 bitrate="$(file "$file" | awk -F ',' '{print $5}' | sed -e 's/^[ \t]*//')"
 
+extension="${file##*.}"
+
 folder="${file%/*}"
 
 if [[ -d $folder ]]; then
@@ -31,9 +33,9 @@ if [[ -n $cover ]]; then
         cover="$TEMP_COVER"
     fi
     
-    notify-send "$songinfo" "$bitrate" -t 3000 -i "$cover"
+    notify-send "$songinfo" "$extension - $bitrate" -t 5000 -i "$cover"
 else
-    notify-send "$songinfo" "$bitrate" -t 3000
+    notify-send "$songinfo" "$extension - $bitrate" -t 5000
 fi
 
 exit 0
