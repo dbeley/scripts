@@ -11,12 +11,16 @@ ldlc;LDLC;https://www.ldlc.com/navigation/%s/
 lfm;Last.fm;https://www.last.fm/fr/search?q=%s
 map;Google Maps;https://www.google.fr/maps/?q=%s
 qw;Qwant;https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s
+r;Subreddit;https://old.reddit.com/r/%s
 rarbg;RARBG;https://rarbg.to/torrents.php?search=%s
+red;Reddit;https://old.reddit.com/search?q=%s&sort=relevance&t=all
+reddit;Reddit;https://old.reddit.com/search?q=%s&sort=relevance&t=all
 rut;Rutracker;https://rutracker.org/forum/tracker.php?nm=%s
 rym;Rateyourmusic;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
 scr;SensCritique;https://www.senscritique.com/recherche?query=%s
 srb;Seriebox;https://www.seriebox.com/search.php?txt=%s
 steam;Steam;https://store.steampowered.com/search/?term=%s
+sub;Subreddit;https://old.reddit.com/r/%s
 twi;Twitter;https://twitter.com/search?q=%s
 wiki;Wikipédia;https://fr.wikipedia.org/w/index.php?search=%s
 wikien;Wikipédia English;https://en.wikipedia.org/w/index.php?search=%s
