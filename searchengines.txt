@@ -2,6 +2,7 @@ ali;Aliexpress;https://fr.aliexpress.com/wholesale?SearchText=%s
 ama;Amazon;https://www.amazon.fr/s/field-keywords=%s
 arch;Arch Linux;https://www.archlinux.org/packages/?q=%s
 aur;AUR;https://aur.archlinux.org/packages/?K=%s
+deal;Dealabs;https://www.dealabs.com/search?q=%s
 eba;Ebay;https://www.ebay.fr/sch/i.html?_nkw=%s
 g;Google;https://www.google.fr/search?q=%s
 gi;Google Images;https://www.google.fr/search?q=%s&tbm=isch
@@ -21,6 +22,7 @@ scr;SensCritique;https://www.senscritique.com/recherche?query=%s
 srb;Seriebox;https://www.seriebox.com/search.php?txt=%s
 steam;Steam;https://store.steampowered.com/search/?term=%s
 sub;Subreddit;https://old.reddit.com/r/%s
+trad;Google Translate;https://translate.google.fr/#auto/fr/%s
 twi;Twitter;https://twitter.com/search?q=%s
 wiki;Wikipédia;https://fr.wikipedia.org/w/index.php?search=%s
 wikien;Wikipédia English;https://en.wikipedia.org/w/index.php?search=%s
