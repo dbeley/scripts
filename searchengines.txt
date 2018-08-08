@@ -1,29 +1,29 @@
-ali;Aliexpress;https://fr.aliexpress.com/wholesale?SearchText=%s
-ama;Amazon;https://www.amazon.fr/s/field-keywords=%s
-arch;Arch Linux;https://www.archlinux.org/packages/?q=%s
-aur;AUR;https://aur.archlinux.org/packages/?K=%s
-deal;Dealabs;https://www.dealabs.com/search?q=%s
-eba;Ebay;https://www.ebay.fr/sch/i.html?_nkw=%s
-g;Google;https://www.google.fr/search?q=%s
-gi;Google Images;https://www.google.fr/search?q=%s&tbm=isch
-git;Github;https://github.com/search?q=%s&type=
-gplay;Google Play;https://play.google.com/store/search?q=%s
-ldlc;LDLC;https://www.ldlc.com/navigation/%s/
-lfm;Last.fm;https://www.last.fm/fr/search?q=%s
-map;Google Maps;https://www.google.fr/maps/?q=%s
-qw;Qwant;https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s
-r;Subreddit;https://old.reddit.com/r/%s
-rarbg;RARBG;https://rarbg.to/torrents.php?search=%s
-red;Reddit;https://old.reddit.com/search?q=%s&sort=relevance&t=all
-reddit;Reddit;https://old.reddit.com/search?q=%s&sort=relevance&t=all
-rut;Rutracker;https://rutracker.org/forum/tracker.php?nm=%s
-rym;Rateyourmusic;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
-scr;SensCritique;https://www.senscritique.com/recherche?query=%s
-srb;Seriebox;https://www.seriebox.com/search.php?txt=%s
-steam;Steam;https://store.steampowered.com/search/?term=%s
-sub;Subreddit;https://old.reddit.com/r/%s
-trad;Google Translate;https://translate.google.fr/#auto/fr/%s
-twi;Twitter;https://twitter.com/search?q=%s
-wiki;Wikipédia;https://fr.wikipedia.org/w/index.php?search=%s
-wikien;Wikipédia English;https://en.wikipedia.org/w/index.php?search=%s
-yt;Youtube;https://www.youtube.com/results?search_query=%s
+AUR;aur;https://aur.archlinux.org/packages/?K=%s
+Aliexpress;ali;https://fr.aliexpress.com/wholesale?SearchText=%s
+Amazon;ama;https://www.amazon.fr/s/field-keywords=%s
+Arch Linux;arch;https://www.archlinux.org/packages/?q=%s
+Dealabs;deal;https://www.dealabs.com/search?q=%s
+Ebay;eba;https://www.ebay.fr/sch/i.html?_nkw=%s
+Github;git;https://github.com/search?q=%s&type=
+Google Images;gi;https://www.google.fr/search?q=%s&tbm=isch
+Google Maps;map;https://www.google.fr/maps/?q=%s
+Google Play;gplay;https://play.google.com/store/search?q=%s
+Google Translate;trad;https://translate.google.fr/#auto/fr/%s
+Google;g;https://www.google.fr/search?q=%s
+LDLC;ldlc;https://www.ldlc.com/navigation/%s/
+Last.fm;lfm;https://www.last.fm/fr/search?q=%s
+Qwant;qw;https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s
+RARBG;rarbg;https://rarbg.to/torrents.php?search=%s
+Rateyourmusic;rym;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
+Reddit;red;https://old.reddit.com/search?q=%s&sort=relevance&t=all
+Reddit;reddit;https://old.reddit.com/search?q=%s&sort=relevance&t=all
+Rutracker;rut;https://rutracker.org/forum/tracker.php?nm=%s
+SensCritique;scr;https://www.senscritique.com/recherche?query=%s
+Seriebox;srb;https://www.seriebox.com/search.php?txt=%s
+Steam;steam;https://store.steampowered.com/search/?term=%s
+Subreddit;r;https://old.reddit.com/r/%s
+Subreddit;sub;https://old.reddit.com/r/%s
+Twitter;twi;https://twitter.com/search?q=%s
+Wikipédia English;wikien;https://en.wikipedia.org/w/index.php?search=%s
+Wikipédia;wiki;https://fr.wikipedia.org/w/index.php?search=%s
+Youtube;yt;https://www.youtube.com/results?search_query=%s
