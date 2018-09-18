@@ -3,6 +3,7 @@ Aliexpress;ali;https://fr.aliexpress.com/wholesale?SearchText=%s
 Amazon;ama;https://www.amazon.fr/s/field-keywords=%s
 Arch Linux;arch;https://www.archlinux.org/packages/?q=%s
 Dealabs;deal;https://www.dealabs.com/search?q=%s
+DuckDuckGo;ddg;https://duckduckgo.com/?q=%s
 Ebay;eba;https://www.ebay.fr/sch/i.html?_nkw=%s
 Github;git;https://github.com/search?q=%s&type=
 Google Images;gi;https://www.google.fr/search?q=%s&tbm=isch
