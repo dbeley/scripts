@@ -6,7 +6,7 @@ CFG_FILE="$HOME/scripts/mpdnotify.conf"
 
 if [[ ! -f "$CFG_FILE" ]]; then
     echo "No config file."
-    notify-send "No config file."
+    notify-send "mpdnotify.sh: No config file."
     exit 1
 else
     . "$CFG_FILE"
