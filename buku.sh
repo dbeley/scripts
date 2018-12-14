@@ -4,7 +4,7 @@
 pgrep -x rofi && exit 1
 pgrep -x buku && exit 1
 
-link="$(buku -p -f 1 | awk '{print $2}' | rofi -p "Favoris " -i -dmenu)"
+link="$(buku -p -f 10 | sed '/^waiting/ d' | rofi -p "Favoris " -i -dmenu)"
 [ -z "$link" ] && exit 1
 
 xdg-open $link

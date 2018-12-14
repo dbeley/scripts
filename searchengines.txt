@@ -2,6 +2,7 @@ AUR;aur;https://aur.archlinux.org/packages/?K=%s
 Aliexpress;ali;https://fr.aliexpress.com/wholesale?SearchText=%s
 Amazon;ama;https://www.amazon.fr/s/field-keywords=%s
 Arch Linux;arch;https://www.archlinux.org/packages/?q=%s
+Arch Linux Wiki;archwiki;https://wiki.archlinux.org/index.php?search=%s
 Dealabs;deal;https://www.dealabs.com/search?q=%s
 DuckDuckGo;ddg;https://duckduckgo.com/?q=%s
 Ebay;eba;https://www.ebay.fr/sch/i.html?_nkw=%s
@@ -11,8 +12,10 @@ Google Maps;map;https://www.google.fr/maps/?q=%s
 Google Play;gplay;https://play.google.com/store/search?q=%s
 Google Translate;trad;https://translate.google.fr/#auto/fr/%s
 Google;g;https://www.google.fr/search?q=%s
-LDLC;ldlc;https://www.ldlc.com/navigation/%s/
+LDLC;ldlc;https://www.ldlc.com/navigation/%s
 Last.fm;lfm;https://www.last.fm/fr/search?q=%s
+Leboncoin;lbc;https://www.leboncoin.fr/recherche/?text=%s
+ProtonDB;protondb;https://www.protondb.com/search?q=%s
 Qwant;qw;https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s
 RARBG;rarbg;https://rarbg.to/torrents.php?search=%s
 Rateyourmusic;rym;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
