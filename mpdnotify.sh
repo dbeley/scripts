@@ -29,7 +29,7 @@ fi
 if [[ -n $cover ]]; then
 
     if [[ -n $COVER_SIZE ]]; then
-        convert "$cover" -thumbnail $COVER_SIZE -gravity center -extent $COVER_SIZE "$TEMP_COVER"
+        convert -quiet "$cover" -thumbnail $COVER_SIZE -gravity center -extent $COVER_SIZE "$TEMP_COVER"
         cover="$TEMP_COVER"
     fi
     
