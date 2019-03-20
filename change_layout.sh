@@ -11,3 +11,7 @@ then
     setxkbmap -layout fr -variant bepo -option ctrl:nocaps,shift:both_capslock
     notify-send "Disposition du clavier : bépo"
 fi 
+
+killall xcape
+xmodmap ~/.Xmodmap || true
+xcape -t 200 -e "Shift_L=Escape;Shift_R=Escape;Hyper_L=Tab;Hyper_R=backslash;Control_L=Escape"
