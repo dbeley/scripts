@@ -1,7 +1,7 @@
 # Scripts
 
 * **buku.sh** : search in buku bookmarks.
-* **change_layout.sh** : change the keyboard layout and send a nofitication with notify-send.
+* **change_layout.sh** : change the keyboard layout and send a notification with notify-send.
 * **display_config.sh** : launch any scripts in the ~/dotfiles/Autres/Écrans/ directory.
 * **draw_urxvt.sh** : draw a urxvt terminal with the mouse.
 * **launch.sh** : launch a script among those in the folder.
