@@ -1,12 +1,19 @@
 AUR;aur;https://aur.archlinux.org/packages/?K=%s
 Aliexpress;ali;https://fr.aliexpress.com/wholesale?SearchText=%s
 Amazon;ama;https://www.amazon.fr/s/field-keywords=%s
-Arch Linux;arch;https://www.archlinux.org/packages/?q=%s
-Arch Linux Wiki;archwiki;https://wiki.archlinux.org/index.php?search=%s
 Arch Linux Wiki FR;archwikifr;https://wiki.archlinux.fr/index.php?search=%s
+Arch Linux Wiki;archwiki;https://wiki.archlinux.org/index.php?search=%s
+Arch Linux;arch;https://www.archlinux.org/packages/?q=%s
+BoardGameGeek;bgg;https://www.boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=%s
 Dealabs;deal;https://www.dealabs.com/search?q=%s
+DockerHub;hub;https://hub.docker.com/search?q=%s&type=image
+DuckDuckGo Images;di;https://duckduckgo.com/?iar=images&q=%s
 DuckDuckGo;ddg;https://duckduckgo.com/?q=%s
+DuckDuckGo;d;https://duckduckgo.com/?q=%s
+DuckDuckGo;j;https://duckduckgo.com/?q=%s
 Ebay;eba;https://www.ebay.fr/sch/i.html?_nkw=%s
+F-Droid;fdroid;https://search.f-droid.org/?q=%s&lang=en
+GSMArena;gsmarena;https://www.gsmarena.com/res.php3?sSearch=%s
 Github;git;https://github.com/search?q=%s&type=
 Google Images;gi;https://www.google.fr/search?q=%s&tbm=isch
 Google Maps;map;https://www.google.fr/maps/?q=%s
@@ -15,24 +22,31 @@ Google Scholar;scholar;https://scholar.google.fr/scholar?hl=fr&q=%s
 Google Translate;trad;https://translate.google.fr/#auto/fr/%s
 Google Trends;trend;https://trends.google.fr/trends/explore?q=%s
 Google;g;https://www.google.fr/search?q=%s
+Idealo;idealo;https://www.idealo.fr/prechcat.html?q=%s
 LDLC;ldlc;https://www.ldlc.com/navigation/%s
 Last.fm;lfm;https://www.last.fm/fr/search?q=%s
+Lastfm Direct;lfmd;https://www.last.fm/fr/music/%s
 Leboncoin;lbc;https://www.leboncoin.fr/recherche/?text=%s
+Open Food Facts;openff;https://fr.openfoodfacts.org/cgi/search.pl?search_terms=%s&search_simple=1&action=process
 OpenStreetMap;osm;https://www.openstreetmap.org/search?query=%s
 ProtonDB;protondb;https://www.protondb.com/search?q=%s
 Qwant;qw;https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s
 RARBG;rarbg;https://rarbg.to/torrents.php?search=%s
+Rateyourmusic Direct;rymd;https://rateyourmusic.com/artist/%s
 Rateyourmusic;rym;https://rateyourmusic.com/search?searchtype=a&searchterm=%s
 Reddit;red;https://old.reddit.com/search?q=%s&sort=relevance&t=all
 Reddit;reddit;https://old.reddit.com/search?q=%s&sort=relevance&t=all
 Rutracker;rut;https://rutracker.org/forum/tracker.php?nm=%s
+Searx;s;http://searx.docker.home/?q=%s
 SensCritique;scr;https://www.senscritique.com/recherche?query=%s
 Seriebox;srb;https://www.seriebox.com/search.php?txt=%s
 Stackoverflow;stack;https://stackoverflow.com/search?query=%s
 Steam;steam;https://store.steampowered.com/search/?term=%s
 Subreddit;r;https://old.reddit.com/r/%s
 Subreddit;sub;https://old.reddit.com/r/%s
+Subreddit;osub;https://old.reddit.com/r/%s
 Twitter;twi;https://twitter.com/search?q=%s
+UserBenchmark;userbenchmark;https://www.userbenchmark.com/Search?searchTerm=%s
 Wikipédia English;wikien;https://en.wikipedia.org/w/index.php?search=%s
 Wikipédia;wiki;https://fr.wikipedia.org/w/index.php?search=%s
 XDA developers;xda;https://forum.xda-developers.com/search/?query=%s

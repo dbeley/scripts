@@ -19,7 +19,6 @@ if [ $? -eq 0 ]; then
     query="$(echo $query | awk '{for (i=2; i<=NF; i++) printf("%s",( (i>2) ? OFS : "") $i)}')"
     link="$(cat $HOME/scripts/searchengines.txt | awk -v e="$engine" -F ';' '$2 == e {print $3}')"
 else
-    #link="https://www.qwant.com/?l=fr&h=0&hc=1&a=1&s=0&b=0&i=1&r=FR&sr=fr&q=%s"
     link="https://duckduckgo.com/?q=%s"
 fi
 
