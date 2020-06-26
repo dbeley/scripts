@@ -19,11 +19,16 @@ if [ $? -eq 0 ]; then
     query="$(echo $query | awk '{for (i=2; i<=NF; i++) printf("%s",( (i>2) ? OFS : "") $i)}')"
     link="$(cat $HOME/scripts/searchengines.txt | awk -v e="$engine" -F ';' '$2 == e {print $3}')"
 else
-    link="https://duckduckgo.com/?q=%s"
+	if [[ $query = *.* ]]; then
+		link="%s"
+	else
+		link="https://duckduckgo.com/?q=%s"
+	fi
 fi
 
 query="${query// /+}"
 finallink="${link/\%s/$query}"
-xdg-open $finallink
+# xdg-open $finallink
+firefox $finallink
 
 exit 0
