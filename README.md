@@ -12,7 +12,7 @@
 * **mprime-phc-setup.sh** : Part of mprime program.
 * **powermenu.sh** : Displays a rofi menu containing power options (reboot, poweroff, lock, suspend.).
 * **pulseaudiocontrol.sh** : Allows setting pulseaudio volume without going over 100%.
-* **random*.sh** : Display a random image from a folder.
+* **random\*.sh** : Display a random image from a folder.
 * **rymchart.sh** : Open in the default web browser the all-time rateyourmusic
     chart for a genre.
 * **search.sh** : Search on the web with engines described in searchengines.txt.
