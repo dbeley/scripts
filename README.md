@@ -10,6 +10,7 @@
 * **mpdsearch.sh** : Add a song searched by its album artist and its name to
     the current mpd playlist.
 * **mprime-phc-setup.sh** : Part of mprime program.
+* **passmenu-rofi.sh** : Rofi script to access pass passwords.
 * **powermenu.sh** : Displays a rofi menu containing power options (reboot, poweroff, lock, suspend.).
 * **pulseaudiocontrol.sh** : Allows setting pulseaudio volume without going over 100%.
 * **random*.sh** : Display a random image from a folder.
