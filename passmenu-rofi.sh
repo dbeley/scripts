@@ -13,7 +13,7 @@ password_files=( "$prefix"/**/*.gpg )
 password_files=( "${password_files[@]#"$prefix"/}" )
 password_files=( "${password_files[@]%.gpg}" )
 
-password=$(printf '%s\n' "${password_files[@]}" | rofi -dmenu -i)
+password=$(printf '%s\n' "${password_files[@]}" | rofi -dmenu -p "Mots de passe " -l 12 -i -width 40)
 
 [[ -n $password ]] || exit
 
