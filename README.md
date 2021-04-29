@@ -3,13 +3,18 @@
 * **buku.sh** : Search in buku bookmarks.
 * **change_layout.sh** : Change the keyboard layout between qwerty intl and bépo.
 * **display_config.sh** : Launch any scripts in the ~/dotfiles/Autres/Écrans/ directory.
+* **display_config_dmenu.sh** : Launch any scripts in the ~/dotfiles/Autres/Écrans/ directory (dmenu version).
 * **draw_urxvt.sh** : Draw a urxvt terminal with the mouse.
+* **dwmstatus.sh.sh** : Script I use for my dwm status bar.
 * **get_volume.sh** : Return the audio volume between 0-100 or "mute".
 * **launch.sh** : Launch a script among those in the folder.
+* **maim.sh** : Take a screenshot with maim.
+* **maim_cropped.sh** : Take a cropped screenshot with maim.
 * **mpdnotify.sh** : Displays a notification containing current mpd track information.
 * **mpdsearch.sh** : Add a song searched by its album artist and its name to
     the current mpd playlist.
 * **mprime-phc-setup.sh** : Part of mprime program.
+* **pamixer.sh** : Control the volume with pamixer.
 * **passmenu-rofi.sh** : Rofi script to access pass passwords.
 * **powermenu.sh** : Displays a rofi menu containing power options (reboot, poweroff, lock, suspend.).
 * **pulseaudiocontrol.sh** : Allows setting pulseaudio volume without going over 100%.
