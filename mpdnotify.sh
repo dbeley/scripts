@@ -27,15 +27,21 @@ if [[ -d $folder ]]; then
 fi
 
 if [[ -n $cover ]]; then
-
     if [[ -n $COVER_SIZE ]]; then
         convert -quiet "$cover" -thumbnail $COVER_SIZE -gravity center -extent $COVER_SIZE "$TEMP_COVER"
         cover="$TEMP_COVER"
     fi
-    
-    notify-send "$songinfo" "$extension - $bitrate" -t 5000 -i "$cover"
+    if [ -z "${bitrate}" ]; then
+    	notify-send "$songinfo" "$extension" -t 5000 -i "$cover"
+    else
+    	notify-send "$songinfo" "$extension - $bitrate" -t 5000 -i "$cover"
+    fi
 else
-    notify-send "$songinfo" "$extension - $bitrate" -t 5000
+    if [ -z "${bitrate}" ]; then
+    	notify-send "$songinfo" "$extension" -t 5000 
+    else
+    	notify-send "$songinfo" "$extension - $bitrate" -t 5000
+    fi
 fi
 
 exit 0
