@@ -1,7 +1,7 @@
 #!/bin/sh
 usage() { printf "%s" "\
-Usage:      ./pamixer.sh [up|bigup|down|bigdown|mute]
-Examples:   ./pamixer.sh up
+Usage:      ./volume_pamixer.sh [up|bigup|down|bigdown|mute]
+Examples:   ./volume_pamixer.sh up
 "; exit 0;
 }
 
@@ -25,5 +25,7 @@ mute)
 	pamixer -t
 	;;
 esac
+
+notify-send -t 300 "VOL $(pamixer --get-volume-human)"
 
 exit 0

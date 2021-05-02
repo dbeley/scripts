@@ -1,7 +1,7 @@
 #!/bin/sh
 usage() { printf "%s" "\
-Usage:      ./pulseaudiocontrol.sh [up|bigup|down|bigdown|mute]
-Examples:   ./pulseaudiocontrol.sh up
+Usage:      ./volume_pulseaudio.sh [up|bigup|down|bigdown|mute]
+Examples:   ./volume_pulseaudio.sh up
 "; exit 0;
 }
 
@@ -31,6 +31,9 @@ volume=`amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $2 }' | head -n 
 
 if [ "$volume" -gt 100 ]; then
 	pactl set-sink-volume @DEFAULT_SINK@ 100%
+	volume="100"
 fi
+
+notify-send -t 300 "VOL ${volume}%"
 
 exit 0

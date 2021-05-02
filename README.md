@@ -14,10 +14,8 @@
 * **mpdsearch.sh** : Add a song searched by its album artist and its name to
     the current mpd playlist (with rofi).
 * **mprime-phc-setup.sh** : Part of mprime program.
-* **pamixer.sh** : Control the volume with pamixer.
 * **passmenu-rofi.sh** : Rofi script to access pass passwords.
 * **powermenu.sh** : Displays a rofi menu containing power options (reboot, poweroff, lock, suspend.).
-* **pulseaudiocontrol.sh** : Allows setting pulseaudio volume without going over 100%.
 * **random\*.sh** : Display a random image from a folder.
 * **rymchart.sh** : Open in the default web browser the all-time rateyourmusic
     chart for a genre.
@@ -25,4 +23,6 @@
 * **sensors.sh** : Displays and refresh sensors infos.
 * **touchpad_toggle.sh** : Toggle on/off the touchpad.
 * **umpv.py** : umpv script.
-* **volumenotify.sh** : Allows setting alsa volume, deprecated.
+* **volume_alsa.sh** : Allows setting alsa volume, deprecated.
+* **volume_pulseaudio.sh** : Allows setting pulseaudio volume without going over 100%.
+* **volume_pamixer.sh** : Control the volume with pamixer.

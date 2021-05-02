@@ -1,5 +1,13 @@
 #!/bin/sh
-[ -z "$1" ] && exit 1
+usage() { printf "%s" "\
+Usage:      ./volume_alsa.sh [up|bigup|down|bigdown|mute]
+Examples:   ./volume_alsa.sh up
+"; exit 0;
+}
+
+if [ -z "$1" ] || [ "$1" == "-h" ]; then
+    usage
+fi
 case "$1" in
 up)
 	amixer -q sset Master 1%+
@@ -28,6 +36,6 @@ else
 	output="mute"
 fi
 
-notify-send "$output"
+notify-send -t 300 "VOL ${output}"
 
 exit 0

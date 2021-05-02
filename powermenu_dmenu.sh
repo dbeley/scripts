@@ -9,7 +9,7 @@ OPTIONS="Lock\nReboot\nPoweroff\nSleep"
 # Import the colors
 . "${HOME}/.cache/wal/colors.sh"
 
-choice="$(echo -e $OPTIONS | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -m $MON)"
+choice="$(echo -e $OPTIONS | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color2" -sf "$color15" -m $MON)"
 [ -z "$choice" ] && exit 1
 case "$choice" in
 Reboot)
