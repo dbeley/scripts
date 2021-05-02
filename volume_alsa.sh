@@ -36,6 +36,6 @@ else
 	output="mute"
 fi
 
-notify-send -t 300 "VOL ${output}"
+notify-send -t 500 "VOL ${output}" -h string:x-canonical-private-synchronous:volume_alsa
 
 exit 0

@@ -26,6 +26,6 @@ mute)
 	;;
 esac
 
-notify-send -t 300 "VOL $(pamixer --get-volume-human)"
+notify-send -t 500 "VOL $(pamixer --get-volume-human)" -h string:x-canonical-private-synchronous:volume_pamixer
 
 exit 0

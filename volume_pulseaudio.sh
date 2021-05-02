@@ -34,6 +34,6 @@ if [ "$volume" -gt 100 ]; then
 	volume="100"
 fi
 
-notify-send -t 300 "VOL ${volume}%"
+notify-send -t 500 "VOL ${volume}%" -h string:x-canonical-private-synchronous:volume_pulseaudio
 
 exit 0
