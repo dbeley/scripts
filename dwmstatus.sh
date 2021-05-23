@@ -15,8 +15,8 @@ while true; do
  | UP $NETWORK_UP\
  | LOAD $LOAD\
  | CPU $CPU\
- | MEM $MEM\
  | FREQ ${FREQ}MHz\
+ | MEM $MEM\
  | VOL $VOL\
  | $DATE"
  	# echo $OUTPUT
