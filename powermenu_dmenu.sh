@@ -22,7 +22,7 @@ Lock)
 	slock
 	;;
 Sleep)
-	slock; systemctl suspend
+	systemctl suspend; slock
 	;;
 *)
 	;;
