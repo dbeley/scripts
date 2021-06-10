@@ -4,7 +4,7 @@
 pgrep -x dmenu && exit 1
 
 MON=$1
-OPTIONS="Lock\nReboot\nPoweroff\nSleep"
+OPTIONS="Lock\nReboot\nPoweroff\nSleep\nSuspend"
 
 # Import the colors
 . "${HOME}/.cache/wal/colors.sh"
@@ -22,6 +22,9 @@ Lock)
 	slock
 	;;
 Sleep)
+	systemctl suspend; slock
+	;;
+Suspend)
 	systemctl suspend; slock
 	;;
 *)
