@@ -8,9 +8,9 @@ then
     notify-send "Disposition du clavier : qwerty international"
 elif [[ $lang == "us" ]]
 then
-    setxkbmap -layout fr -variant bepo -option ctrl:nocaps,shift:both_capslock
+    setxkbmap -layout fr -variant bepo_afnor -option ctrl:nocaps,shift:both_capslock
     notify-send "Disposition du clavier : bépo"
-fi 
+fi
 
 killall xcape
 xmodmap ~/.Xmodmap || true
