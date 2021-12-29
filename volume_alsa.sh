@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 usage() { printf "%s" "\
 Usage:      ./volume_alsa.sh [up|bigup|down|bigdown|mute]
 Examples:   ./volume_alsa.sh up
 "; exit 0;
 }
 
-if [ -z "$1" ] || [ "$1" == "-h" ]; then
+if [[ -z "$1" ]] || [[ "$1" = "-h" ]]; then
     usage
 fi
 case "$1" in
@@ -26,10 +26,10 @@ mute)
 	;;
 esac
 
-volume=`amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $2 }' | head -n 1 | sed -e 's/%//g'`
-mute=`amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $4 }' | head -n 1`
+volume="$(amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $2 }' | head -n 1 | sed -e 's/%//g')"
+mute="$(amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $4 }' | head -n 1)"
 
-if [ "$mute" == "on" ]; then
+if [[ "$mute" = "on" ]]; then
 	# output=" $volume%"
 	output="$volume%"
 else

@@ -2,7 +2,7 @@
 
 while true; do
     clear
-    cat /proc/cpuinfo | grep MHz
+    grep MHz /proc/cpuinfo
     sleep 2
 done
 

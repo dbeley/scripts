@@ -7,5 +7,5 @@ pgrep -x buku && exit 1
 link="$(buku -p -f 10 | sed '/^waiting/ d' | rofi -p "Favoris " -i -dmenu)"
 [ -z "$link" ] && exit 1
 
-xdg-open $link
+xdg-open "$link"
 exit 0

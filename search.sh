@@ -3,21 +3,23 @@
 # A search with a first word not corresponding to any search engines will do a search with the default engine (Qwant)
 # An empty search will do a search with the default engine (Duckduckgo) of the selected line in rofi
 
-pgrep -x rofi && exit 1
+if [[ -x "$(command -v rofi)" ]]; then
+	query="$(awk -F ';' '{print $1, "- "$2}' "$HOME"/scripts/searchengines.txt | rofi -p "Recherche " -i -dmenu)"
+elif [[ -x "$(command -v dmenu)" ]]; then
+	query="$(awk -F ';' '{print $1, "- "$2}' "$HOME"/scripts/searchengines.txt | dmenu_run -i -l 10)"
+elif [[ -x "$(command -v bemenu)"  ]]; then
+	query="$(awk -F ';' '{print $1, "- "$2}' "$HOME"/scripts/searchengines.txt | bemenu -l 15 -p "Rercherche" --nb "#282a36" --hf "#f8f82" --fn "iosevka italic 10")"
+fi
 
-query="$(cat $HOME/scripts/searchengines.txt | awk -F ';' '{print $1, "- "$2}' | rofi -p "Recherche " -i -dmenu)"
 [ -z "$query" ] && exit 1
+engines="$(awk -F ';' '{print $2}' "$HOME"/scripts/searchengines.txt)"
+engine="$(echo "$query" | awk '{print $1}')"
 
-engines="$(cat $HOME/scripts/searchengines.txt | awk -F ';' '{print $2}')"
-
-engine="$(echo $query | awk '{print $1}')"
-
-echo "$engines" | grep -q "$engine"
 # if engine is in engines
-if [ $? -eq 0 ]; then
+if [[ $(echo "$engines" | grep -q "$engine") -eq 0 ]]; then
     # remove the first element of query
-    query="$(echo $query | awk '{for (i=2; i<=NF; i++) printf("%s",( (i>2) ? OFS : "") $i)}')"
-    link="$(cat $HOME/scripts/searchengines.txt | awk -v e="$engine" -F ';' '$2 == e {print $3}')"
+    query="$(echo "$query" | awk '{for (i=2; i<=NF; i++) printf("%s",( (i>2) ? OFS : "") $i)}')"
+    link="$(awk -v e="$engine" -F ';' '$2 == e {print $3}' "$HOME"/scripts/searchengines.txt)"
 else
 	if [[ $query = *.* ]]; then
 		link="%s"
@@ -29,6 +31,6 @@ fi
 query="${query// /+}"
 finallink="${link/\%s/$query}"
 # xdg-open $finallink
-firefox $finallink
+firefox "$finallink"
 
 exit 0

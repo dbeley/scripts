@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 usage() { printf "%s" "\
 Usage:      ./volume_pulseaudio.sh [up|bigup|down|bigdown|mute]
 Examples:   ./volume_pulseaudio.sh up
 "; exit 0;
 }
 
-if [ -z "$1" ] || [ "$1" == "-h" ]; then
+if [[ -z "$1" ]] || [[ "$1" = "-h" ]]; then
     usage
 fi
 case "$1" in
@@ -26,10 +26,9 @@ mute)
 	;;
 esac
 
-volume=`amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $2 }' | head -n 1 | sed -e 's/%//g'`
-# mute=`amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $4 }' | head -n 1`
+volume="$(amixer -D pulse sget Master | awk -F"[][]" '/%/ { print $2 }' | head -n 1 | sed -e 's/%//g')"
 
-if [ "$volume" -gt 100 ]; then
+if [[ "$volume" -gt 100 ]]; then
 	pactl set-sink-volume @DEFAULT_SINK@ 100%
 	volume="100"
 fi

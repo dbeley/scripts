@@ -7,9 +7,9 @@ MON=$1
 # Import the colors
 . "${HOME}/.cache/wal/colors.sh"
 
-script="$(ls $HOME/dotfiles/Autres/Écrans/*.sh | xargs -n1 basename | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -m $MON)"
+script="$(find "$HOME"/dotfiles/Autres/Écrans/*.sh -print0 | xargs -0 -n1 basename | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -m "$MON")"
 [ -z "$script" ] && exit 1
 
-bash $HOME/dotfiles/Autres/Écrans/$script
+bash "$HOME/dotfiles/Autres/Écrans/$script"
 
 exit 0

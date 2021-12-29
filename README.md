@@ -5,7 +5,6 @@
 * **change_layout_wayland.sh**: Change the keyboard layout between qwerty intl and bépo (on wayland).
 * **display_config.sh**: Launch any scripts in the ~/dotfiles/Autres/Écrans/ directory (with rofi).
 * **display_config_dmenu.sh**: Launch any scripts in the ~/dotfiles/Autres/Écrans/ directory (with dmenu).
-* **draw_urxvt.sh**: Draw a urxvt terminal with the mouse.
 * **dwmstatus.sh**: Script I use for my dwm status bar.
 * **get_volume.sh**: Return the audio volume between 0-100 or "mute".
 * **launch.sh**: Launch a script among those in the folder ~/scripts.
@@ -14,7 +13,6 @@
 * **mpdnotify.sh**: Displays a notification containing current mpd track information.
 * **mpdsearch.sh**: Add a song searched by its album artist and its name to
     the current mpd playlist (with rofi).
-* **mprime-phc-setup.sh**: Part of mprime program.
 * **passmenu-rofi.sh**: Rofi script to access pass passwords.
 * **powermenu.sh**: Displays a rofi menu containing power options (reboot, poweroff, lock, suspend.).
 * **powermenu_dmenu.sh**: Displays a dmenu menu containing power options (reboot, poweroff, lock, suspend.).
