@@ -51,3 +51,9 @@ Wikipédia English;wikien;https://en.wikipedia.org/w/index.php?search=%s
 Wikipédia;wiki;https://fr.wikipedia.org/w/index.php?search=%s
 XDA developers;xda;https://forum.xda-developers.com/search/?query=%s
 Youtube;yt;https://www.youtube.com/results?search_query=%s
+Back Market;backmarket;https://www.backmarket.fr/search?q=%s
+Fnac;fnac;https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0%211&sft=1&sa=0&Search=%s
+IsThereAnyDeal;itad;https://isthereanydeal.com/search/?q=%s
+HowLongToBeat;howlongtobeat;https://howlongtobeat.com/game.php?id=1023&t=games&platform=&search_sort_g=popular&search_range_type=main&search_len_str_g=&search_len_end_g=&search_sort_u=postcount&detail=&q=%s
+Goodreads;goodreads;https://www.goodreads.com/search?qid=&q=%s
+Ultimate Guitar;ug;https://www.ultimate-guitar.com/search.php?value=%s

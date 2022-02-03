@@ -9,6 +9,8 @@ elif [[ -x "$(command -v dmenu)" ]]; then
 	query="$(awk -F ';' '{print $1, "- "$2}' "$HOME"/scripts/searchengines.txt | dmenu_run -i -l 10)"
 elif [[ -x "$(command -v bemenu)"  ]]; then
 	query="$(awk -F ';' '{print $1, "- "$2}' "$HOME"/scripts/searchengines.txt | bemenu -l 15 -p "Rercherche" --nb "#282a36" --hf "#f8f82" --fn "iosevka italic 10")"
+elif [[ -x "$(command -v wofi)" ]]; then
+	query="$(awk -F ';' '{print $1, "- "$2}' "$HOME"/scripts/searchengines.txt | wofi --dmenu)"
 fi
 
 [ -z "$query" ] && exit 1
