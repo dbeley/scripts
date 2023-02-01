@@ -16,6 +16,7 @@
 * **passmenu-rofi.sh**: Rofi script to access pass passwords.
 * **powermenu.sh**: Displays a rofi menu containing power options (reboot, poweroff, lock, suspend.).
 * **powermenu_dmenu.sh**: Displays a dmenu menu containing power options (reboot, poweroff, lock, suspend.).
+* **powermenu_wofi.sh**: Displays a wofi menu containing power options (reboot, poweroff, lock, suspend.).
 * **random\*.sh**: Display a random image from a folder.
 * **rymchart.sh**: Open in the default web browser the all-time rateyourmusic
     chart for a genre.
