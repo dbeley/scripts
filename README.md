@@ -7,6 +7,7 @@
 * **display_config_dmenu.sh**: Launch any scripts in the ~/dotfiles/Autres/Écrans/ directory (with dmenu).
 * **dwmstatus.sh**: Script I use for my dwm status bar.
 * **get_volume.sh**: Return the audio volume between 0-100 or "mute".
+* **hyprland_switch_monitor.sh**: Switch on/off a screen in Hyprland WM.
 * **launch.sh**: Launch a script among those in the folder ~/scripts.
 * **maim.sh**: Take a screenshot with maim.
 * **maim_cropped.sh**: Take a cropped screenshot with maim.
