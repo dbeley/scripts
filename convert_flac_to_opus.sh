@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-for file in *.flac; do ffmpeg -i "$file" -b:a 128k "${file%.*}.opus"; done
+fd -e flac -x ffmpeg -i "{}" -b:a 128k -loglevel quiet -stats "{.}.opus"; done
