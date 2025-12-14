@@ -1,2 +1,4 @@
 mpdnotify.conf
 tags
+__pycache__/
+*.pyc
