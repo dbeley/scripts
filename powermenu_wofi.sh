@@ -5,7 +5,7 @@ pgrep -x wofi && exit 1
 
 OPTIONS="Reboot\nPoweroff\nSleep"
 
-choice="$(echo -e $OPTIONS | wofi -i -dmenu )"
+choice="$(echo -e "$OPTIONS" | wofi -i -dmenu )"
 
 [ -z "$choice" ] && exit 1
 case "$choice" in

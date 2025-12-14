@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [[ $(hyprctl monitors | grep $1) ]]; then
+if hyprctl monitors | grep -q "$1"; then
 	hyprctl keyword monitor "$1",disable
 	notify-send "Monitor $1 is now switched off"
 else
