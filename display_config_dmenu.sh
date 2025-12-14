@@ -5,8 +5,10 @@
 MON=$1
 
 # Import the colors
+# shellcheck source=/dev/null
 . "${HOME}/.cache/wal/colors.sh"
 
+# shellcheck disable=SC2154
 script="$(find "$HOME"/dotfiles/Autres/Écrans/*.sh -print0 | xargs -0 -n1 basename | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -m "$MON")"
 [ -z "$script" ] && exit 1
 

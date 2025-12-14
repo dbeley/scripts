@@ -9,6 +9,7 @@ if [[ ! -f "$CFG_FILE" ]]; then
     notify-send "mpdnotify.sh: No config file." -h string:x-canonical-private-synchronous:mpdnotify
     exit 1
 else
+    # shellcheck source=/dev/null
     . "$CFG_FILE"
 fi
 

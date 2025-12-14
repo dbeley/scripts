@@ -7,9 +7,11 @@ MON=$1
 OPTIONS="Lock\nReboot\nPoweroff\nSleep\nSuspend"
 
 # Import the colors
+# shellcheck source=/dev/null
 . "${HOME}/.cache/wal/colors.sh"
 
-choice="$(echo -e $OPTIONS | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -m "$MON")"
+# shellcheck disable=SC2154
+choice="$(echo -e "$OPTIONS" | dmenu -i -l 10 -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15" -m "$MON")"
 [[ -z "$choice" ]] && exit 1
 case "$choice" in
 Reboot)

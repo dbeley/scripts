@@ -18,7 +18,7 @@ engines="$(awk -F ';' '{print $2}' "$HOME"/scripts/searchengines.txt)"
 engine="$(echo "$query" | awk '{print $1}')"
 
 # if engine is in engines
-if [[ $(echo "$engines" | grep -q "$engine") -eq 0 ]]; then
+if echo "$engines" | grep -q "$engine"; then
     # remove the first element of query
     query="$(echo "$query" | awk '{for (i=2; i<=NF; i++) printf("%s",( (i>2) ? OFS : "") $i)}')"
     link="$(awk -v e="$engine" -F ';' '$2 == e {print $3}' "$HOME"/scripts/searchengines.txt)"
